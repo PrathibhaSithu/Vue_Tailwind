@@ -19,23 +19,47 @@
               <a class="hover:text-[#735da8] relative z-10" href="#">Products</a>
               <span class="absolute inset-0 bg-[#a78aec] opacity-0 transition-opacity duration-300 group-hover:opacity-50 rounded-md"></span>
             </li>
-            <li>
-              <a class="hover:text-[#735da8]" href="#">Solution</a>
-            </li>
-            <li>
-              <a class="hover:text-[#735da8]" href="#">Resource</a>
-            </li>
-            <li>
-              <a class="hover:text-[#735da8]" href="#">Developers</a>
-            </li>
-            <li>
-              <a class="hover:text-[#735da8]" href="#">Pricing</a>
-            </li>
+            <li class="relative group">
+                  <a
+                    class="hover:text-[#735da8] relative z-10"
+                    href="#"
+                  >
+                    Solution
+                  </a>
+                  <span class="absolute inset-0 bg-[#a78aec] opacity-0 transition-opacity duration-300 group-hover:opacity-50 rounded-md"></span>
+                </li>
+                <li class="relative group">
+                  <a
+                    class="hover:text-[#735da8] relative z-10"
+                    href="#"
+                  >
+                    Resource
+                  </a>
+                  <span class="absolute inset-0 bg-[#a78aec] opacity-0 transition-opacity duration-300 group-hover:opacity-50 rounded-md"></span>
+                </li>
+                <li class="relative group">
+                  <a
+                    class="hover:text-[#735da8] relative z-10"
+                    href="#"
+                  >
+                    Developers
+                  </a>
+                  <span class="absolute inset-0 bg-[#a78aec] opacity-0 transition-opacity duration-300 group-hover:opacity-50 rounded-md"></span>
+                </li>
+                <li class="relative group">
+                  <a
+                    class="hover:text-[#735da8] relative z-10"
+                    href="#"
+                  >
+                    Pricing
+                  </a>
+                  <span class="absolute inset-0 bg-[#a78aec] opacity-0 transition-opacity duration-300 group-hover:opacity-50 rounded-md"></span>
+                </li>
           </ul>
         </div>
         <div class="flex items-center gap-6">
           <button class="bg-[#7F9AE6] text-white px-5 py-2 rounded-full hover:bg-[#735da8]">
-            Sign in
+            Button
           </button>
           <ion-icon
             :name="menuOpen ? 'close' : 'menu'"
