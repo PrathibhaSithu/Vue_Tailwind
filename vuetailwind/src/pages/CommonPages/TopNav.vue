@@ -4,7 +4,7 @@
         <div>
           <img
             class="w-16 cursor-pointer"
-            src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png"
+            src="@/assets/images/logo.png"
             alt="Logo"
           />
         </div>
@@ -16,24 +16,24 @@
         >
           <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
             <li>
-              <a class="hover:text-gray-500" href="#">Products</a>
+              <a class="hover:text-[#735da8]" href="#">Products</a>
             </li>
             <li>
-              <a class="hover:text-gray-500" href="#">Solution</a>
+              <a class="hover:text-[#735da8]" href="#">Solution</a>
             </li>
             <li>
-              <a class="hover:text-gray-500" href="#">Resource</a>
+              <a class="hover:text-[#735da8]" href="#">Resource</a>
             </li>
             <li>
-              <a class="hover:text-gray-500" href="#">Developers</a>
+              <a class="hover:text-[#735da8]" href="#">Developers</a>
             </li>
             <li>
-              <a class="hover:text-gray-500" href="#">Pricing</a>
+              <a class="hover:text-[#735da8]" href="#">Pricing</a>
             </li>
           </ul>
         </div>
         <div class="flex items-center gap-6">
-          <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">
+          <button class="bg-[#7F9AE6] text-white px-5 py-2 rounded-full hover:bg-[#735da8]">
             Sign in
           </button>
           <ion-icon
