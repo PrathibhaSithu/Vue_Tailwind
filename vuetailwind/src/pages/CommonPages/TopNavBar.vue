@@ -3,7 +3,7 @@
       <nav class="flex justify-between items-center w-[92%] mx-auto">
         <div>
           <img
-            class="w-16 cursor-pointer"
+            class="w-20 cursor-pointer ml-5"
             src="@/assets/images/logo.png"
             alt="Logo"
           />
