@@ -73,11 +73,16 @@
 </template>
   
 <script>
+  import menuIcon from "@/assets/images/menu.png";
+  import closeIcon from "@/assets/images/close.png";
+
   export default {
     name: "TopNav",
     data() {
       return {
         menuOpen: false,
+        menuIcon,
+        closeIcon,
       };
     },
     methods: {
