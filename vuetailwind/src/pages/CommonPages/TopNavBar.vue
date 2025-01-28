@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-white py-3 rounded-full shadow-lg mx-auto w-[92%]">
+    <header class="bg-[#e67fb6] py-3 rounded-b-4xl rounded-tr-4xl shadow-lg mx-auto ">
       <nav class="flex justify-between items-center w-[92%] mx-auto">
         <div>
           <img
