@@ -10,11 +10,11 @@
         </div>
         <div
           :class="[ 
-            'nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 ',
-            menuOpen ? 'top-[15%] ' : ''
+            'nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 rounded-b-2xl ',
+            menuOpen ? 'top-[15%] bg-white shadow-lg' : ''
           ]"
         >
-          <ul class="flex md:flex-row flex-col md:items-center md:gap-[2.5vw] gap-6 text-xl">
+          <ul class="flex md:flex-row flex-col md:items-center md:gap-[2.5vw] gap-6 text-l">
             <li class="relative">
               <a
                 href="#"
