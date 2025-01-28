@@ -62,7 +62,7 @@
             Button
           </button>
           <img
-            :src="menuOpen ? '@/assets/images/close.png' : '@/assets/images/menu.png'"
+            :src="menuOpen ? closeIcon : menuIcon"
             alt="Menu Toggle"
             class="w-8 h-8 cursor-pointer md:hidden"
             @click="toggleMenu"
