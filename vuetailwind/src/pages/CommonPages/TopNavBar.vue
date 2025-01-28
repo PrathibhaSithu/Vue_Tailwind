@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-[#e67fb6] py-3 rounded-bl-full rounded-tr-full shadow-lg mx-auto w-[92%]">
+    <header class="bg-[#fab9dc] py-3 rounded-bl-full rounded-tr-full shadow-lg mx-auto w-[92%]">
       <nav class="flex justify-between items-center w-[92%] mx-auto">
         <div>
           <img
@@ -14,11 +14,11 @@
             menuOpen ? 'top-[15%] shadow-lg' : ''
           ]"
         >
-          <ul class="flex md:flex-row flex-col md:items-center md:gap-[2.5vw] gap-6">
+          <ul class="flex md:flex-row flex-col md:items-center md:gap-[2.5vw] gap-6 text-xl">
             <li class="relative">
               <a
                 href="#"
-                class="px-6 py-2 bg-gradient-to-r from-[#7F9AE6] to-pink-400 text-white text-xl rounded-full shadow-md"
+                class="px-6 py-2 bg-gradient-to-r from-[#7F9AE6] to-pink-400 text-white  rounded-full shadow-md"
               >
                 Home
               </a>
