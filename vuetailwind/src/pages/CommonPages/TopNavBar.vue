@@ -18,7 +18,7 @@
             <li class="relative">
               <a
                 href="#"
-                class="px-6 py-2 bg-gradient-to-r from-[#7F9AE6] to-pink-400 text-white rounded-full shadow-md"
+                class="px-6 py-2 bg-gradient-to-r from-[#7F9AE6] to-pink-400 text-white text-xl rounded-full shadow-md"
               >
                 Home
               </a>
