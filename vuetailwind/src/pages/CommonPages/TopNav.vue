@@ -47,17 +47,17 @@
 </template>
 
 <script>
-export default {
-    name: "TopNav",
-    data() {
-      return {
-        menuOpen: false,
-      };
-    },
-    methods: {
-      toggleMenu() {
-        this.menuOpen = !this.menuOpen;
-      },
-    },
-};
+    export default {
+        name: "TopNav",
+        data() {
+        return {
+            menuOpen: false,
+        };
+        },
+        methods: {
+        toggleMenu() {
+            this.menuOpen = !this.menuOpen;
+        },
+        },
+    };
 </script>
