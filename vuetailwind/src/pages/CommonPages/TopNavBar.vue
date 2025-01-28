@@ -10,7 +10,7 @@
         </div>
         <div
           :class="[ 
-            'nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 rounded-full',
+            'nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 ',
             menuOpen ? 'top-[15%] shadow-lg' : ''
           ]"
         >
