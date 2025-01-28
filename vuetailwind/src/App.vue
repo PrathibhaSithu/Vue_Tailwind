@@ -1,13 +1,18 @@
 <template>
   <div id="app">
     <TopNavBar v-if="showTopNav"/>
-    <router-view/>
+    <div>
+      <router-view/>
+    </div>
+    
   </div>
 </template>
 
 <script>
   import { computed } from 'vue';
   import { useRoute } from 'vue-router';
+
+  import TopNavBar from './pages/CommonPages/TopNav.vue';
 
   export default {
     name: 'App',
