@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-[#fab9dc] mt-2 py-3 rounded-bl-full rounded-br-full shadow-lg mx-auto w-full">
+    <header class="bg-[#fab9dc] mt-2 py-3 rounded-b-full shadow-lg mx-auto w-full">
       <nav class="flex justify-between items-center w-[92%] mx-auto">
         <div>
           <img
@@ -61,11 +61,12 @@
           <button class="bg-[#7F9AE6] text-white text-xl px-5 py-2 rounded-full hover:bg-[#735da8]">
             Button
           </button>
-          <ion-icon
-            :name="menuOpen ? 'close' : 'menu' "
-            class="text-3xl cursor-pointer md:hidden"
+          <img
+            :src="menuOpen ? '../../assets/images/close.png' : '../../assets/images/menu.png'"
+            alt="Menu Toggle"
+            class="w-8 h-8 cursor-pointer md:hidden"
             @click="toggleMenu"
-          ></ion-icon>
+           />
         </div>
       </nav>
     </header>
