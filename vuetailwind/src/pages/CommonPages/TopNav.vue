@@ -15,8 +15,9 @@
           ]"
         >
           <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
-            <li>
-              <a class="hover:text-[#735da8] hover:bg-[#a78aec]" href="#">Products</a>
+            <li class="relative group">
+              <a class="hover:text-[#735da8] relative z-10" href="#">Products</a>
+              <span class="absolute inset-0 bg-[#a78aec] opacity-0 transition-opacity duration-300 group-hover:opacity-50 rounded-md"></span>
             </li>
             <li>
               <a class="hover:text-[#735da8]" href="#">Solution</a>
