@@ -12,13 +12,9 @@ npm install
 
 ## Install Tailwind Css
 ```
-npm install -D tailwindcss postcss autoprefixer
+npm install tailwindcss @tailwindcss/vite
 ```
 
-## Create configuration files
-```
-npx tailwindcss init -p
-```
 
 ### Compiles and hot-reloads for development
 ```
