@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-[#fab9dc] py-3 rounded-bl-full rounded-tr-full shadow-lg mx-auto w-[92%]">
+    <header class="bg-[#fab9dc] mt-2 py-3 rounded-bl-full rounded-br-full shadow-lg mx-auto w-[92%]">
       <nav class="flex justify-between items-center w-[92%] mx-auto">
         <div>
           <img
@@ -58,7 +58,7 @@
           </ul>
         </div>
         <div class="flex items-center gap-6">
-          <button class="bg-[#7F9AE6] text-white px-5 py-2 rounded-full hover:bg-[#735da8]">
+          <button class="bg-[#7F9AE6] text-white text-xl px-5 py-2 rounded-full hover:bg-[#735da8]">
             Button
           </button>
           <ion-icon
