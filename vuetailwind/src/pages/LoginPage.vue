@@ -1,6 +1,6 @@
 <template>
-    <div class="flex justify-between w-4/5 h-4/5 bg-[#6e64c5] rounded-lg p-10 mx-auto mt-12">
-      <div class="w-3/6 bg-white mr-10 p-8 border-2 border-[#1a1a4c] rounded-md flex flex-col justify-center">
+    <div class="flex justify-between w-4/5 h-4/5 bg-[#6e64c5] rounded-lg p-10 mx-auto mt-15">
+      <div class="w-3/6 bg-white mr-10 p-8 pt-15 pb-15 border-2 border-[#1a1a4c] rounded-md flex flex-col justify-center">
         <h2 class="text-5xl font-bold text-[#1a1a4c] mb-8">Login</h2>
           
         <!-- Username -->
@@ -13,21 +13,6 @@
               id="username"
               v-model="username"
               placeholder="Enter your username"
-              class="w-full pl-10 pr-4 py-2 border border-[#1a1a4c] rounded-full text-l focus:outline-none"
-            />
-          </div>
-        </div>
-  
-        <!-- System Name -->
-        <div class="mb-4">
-          <label for="systemname" class="block text-xl text-[#1a1a4c] font-bold mb-2">System Name</label>
-          <div class="relative">
-            <img src="@/assets/images/system.png" alt="System Icon" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5" />
-            <input
-              type="text"
-              id="systemname"
-              v-model="systemName"
-              placeholder="Enter your system name"
               class="w-full pl-10 pr-4 py-2 border border-[#1a1a4c] rounded-full text-l focus:outline-none"
             />
           </div>
@@ -58,42 +43,31 @@
             Login
         </button>
   
-        <p class="text-center text-[#1a1a4c] font-bold cursor-pointer mt-4" @click="navigateToSignup">
-          Create an Account
-        </p>
       </div>
   
-      <div class="w-1/2 relative border-2 border-white rounded-md">
-        <img src="@/assets/images/mof.png" alt="Government Building" class="w-full h-full object-cover rounded-md brightness-50" />
-  
-        <div class="absolute inset-0 flex flex-col items-center pt-12 space-y-4">
-          <div class="flex items-center space-x-2">
-            <img src="@/assets/images/govlogo.png" alt="Government Logo" class="w-14" />
-          </div>
-  
-          <div class="text-white text-shadow text-center">
-            <h3 class="text-xl font-bold">SYSTEM MANAGEMENT</h3>
-            <p class="text-xl">DEPARTMENT OF INFORMATION TECHNOLOGY</p>
-          </div>
+      <div class="w-1/2 rounded border-2 border-white bg-gradient-to-br from-[#6e64c5] to-[#02036f] flex flex-col justify-between text-white">
+      <div class="flex flex-col items-center mt-20">
+        <div class="flex items-center space-x-2">
+          <img src="@/assets/images/flower.png" alt="Government Logo" class="w-14" />
         </div>
+        <br/>
+        <h2 class="text-4xl font-bold mb-9">Have an Account?</h2>
+        <button
+          class="border-2 border-white py-2 px-8 rounded-full font-bold hover:bg-white hover:text-hover-blue"
+          @click="navigateToSignin" >
+          Sign In
+        </button>
       </div>
+    </div>
   
     </div>
 </template>
   
 <script>
-    import axios from 'axios';
-    // import Swal from 'sweetalert2'; 
+    import Swal from 'sweetalert2'; 
   
     import openEyeIcon from '@/assets/images/openeye.png';
     import closeEyeIcon from '@/assets/images/closeeye.png';
-  
-    const axiosInstance = axios.create({
-      baseURL: 'baseURL',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
   
     export default {
       name: "LoginPage",
@@ -101,7 +75,6 @@
         return {
           username: '',
           password: '',
-          systemName: '',
           showPassword: false,
           openEyeIcon,
           closeEyeIcon,
@@ -109,62 +82,31 @@
       },
       
       methods: {
-        togglePasswordVisibility() {
-          this.showPassword = !this.showPassword;
-        },
-  
-    //     async handleLogin() {
-    //       try {
-    //         // Create form-data payload
-    //         const formData = new FormData();
-    //         formData.append('username', this.username);
-    //         formData.append('password', this.password);
-    //         formData.append('systemName', this.systemName);
-  
-    //         // Send the POST request
-    //         const response = await axiosInstance.post('/url', formData, {
-    //           headers: {
-    //             'Content-Type': 'multipart/form-data',
-    //           },
-    //         });
-  
-    //         if (response.status === 200 && response.data) {
-    //           Swal.fire({
-    //             icon: 'success',
-    //             title: 'Login Successful!',
-    //             text: 'You will be redirected to the home page shortly.',
-    //             timer: 1500,
-    //             showConfirmButton: false,
-    //           }).then(() => {
-    //             // Redirect to home page
-    //             this.$router.push({ name: 'Home', query: { username: this.username } });
-    //           });
-    //         }
-    //       } catch (error) {
-    //         if (error.response && error.response.status === 401) {
-    //           Swal.fire({
-    //             icon: 'error',
-    //             title: 'Login Failed',
-    //             text: error.response.data.message || 'Invalid username or password',
-    //             confirmButtonText: 'Try Again',
-    //           });
-    //         } else {
-    //           Swal.fire({
-    //             icon: 'error',
-    //             title: 'An error occurred',
-    //             text: 'Could not complete login. Please try again later.',
-    //             confirmButtonText: 'OK',
-    //           });
-    //         }
-    //         console.error('Login error:', error);
-    //       }
-    //     },
-  
-    //     navigateToSignup() {
-    //       this.$router.push({ name: 'Signup' }); 
-    //     },
+      handleLogin() {
+        if (this.username === 'UserName' && this.password === 'Password123') {
+          Swal.fire({
+            icon: 'success',
+            title: 'Login Successful!',
+            text: 'You will be redirected to the Home Page shortly.',
+            timer: 1500,
+            showConfirmButton: false,
+          }).then(() => {
+            this.$router.push({ name: 'HomePage' });
+          });
+        } else {
+          Swal.fire({
+            icon: 'error',
+            title: 'Login Failed',
+            text: 'Invalid Username or Password',
+            confirmButtonText: 'Try Again',
+          });
+        }
+      },
+      
+      togglePasswordVisibility() {
+        this.showPassword = !this.showPassword;
+      },
     },
   
     };
-  </script>
-  
+</script>
