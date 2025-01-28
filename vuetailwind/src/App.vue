@@ -12,11 +12,13 @@
   import { computed } from 'vue';
   import { useRoute } from 'vue-router';
 
-  import TopNavBar from './pages/CommonPages/TopNav.vue';
+  import TopNavBar from './pages/CommonPages/TopNavBar.vue';
+
 
   export default {
     name: 'App',
     components: {
+      // TopNav,
       TopNavBar,
     },
     setup() {
