@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-[#fab9dc] mt-2 py-3 rounded-b-full shadow-lg mx-auto w-full">
+    <header class="bg-[#fab9dc] mt-2 py-3 shadow-lg mx-auto w-full">
       <nav class="flex justify-between items-center w-[92%] mx-auto">
         <div>
           <img
@@ -10,11 +10,11 @@
         </div>
         <div
           :class="[ 
-            'nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 rounded-full',
-            menuOpen ? 'top-[15%] shadow-lg' : ''
+            'nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 rounded-b-2xl ',
+            menuOpen ? 'top-[15%] bg-white shadow-lg' : ''
           ]"
         >
-          <ul class="flex md:flex-row flex-col md:items-center md:gap-[2.5vw] gap-6 text-xl">
+          <ul class="flex md:flex-row flex-col md:items-center md:gap-[2.5vw] gap-6 text-l">
             <li class="relative">
               <a
                 href="#"
@@ -62,7 +62,7 @@
             Button
           </button>
           <img
-            :src="menuOpen ? '../../assets/images/close.png' : '../../assets/images/menu.png'"
+            :src="menuOpen ? closeIcon : menuIcon"
             alt="Menu Toggle"
             class="w-8 h-8 cursor-pointer md:hidden"
             @click="toggleMenu"
@@ -73,11 +73,16 @@
 </template>
   
 <script>
+  import menuIcon from "@/assets/images/menu.png";
+  import closeIcon from "@/assets/images/close.png";
+
   export default {
     name: "TopNav",
     data() {
       return {
         menuOpen: false,
+        menuIcon,
+        closeIcon,
       };
     },
     methods: {
