@@ -10,7 +10,7 @@
         </div>
         <div
           :class="[ 
-            'nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 rounded-full',
+            'nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 rounded-full',
             menuOpen ? 'top-[15%] shadow-lg' : ''
           ]"
         >
@@ -88,15 +88,7 @@
 </script>
   
 <style scoped>
-  .nav-links ul li a {
+  /* .nav-links ul li a {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
+  } */
 </style>
-<!--   
-  
-<script>
-  export default {
-      name: "TopNavBar",
-          
-  };
-</script> -->
