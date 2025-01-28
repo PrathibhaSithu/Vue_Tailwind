@@ -16,7 +16,7 @@
         >
           <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
             <li>
-              <a class="hover:text-[#735da8]" href="#">Products</a>
+              <a class="hover:text-[#735da8] hover:bg-[#a78aec]" href="#">Products</a>
             </li>
             <li>
               <a class="hover:text-[#735da8]" href="#">Solution</a>
