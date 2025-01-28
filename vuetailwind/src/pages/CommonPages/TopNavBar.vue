@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-[#fab9dc] mt-2 py-3 rounded-b-full shadow-lg mx-auto w-full">
+    <header class="bg-[#fab9dc] mt-2 py-3 shadow-lg mx-auto w-full">
       <nav class="flex justify-between items-center w-[92%] mx-auto">
         <div>
           <img
@@ -62,7 +62,7 @@
             Button
           </button>
           <img
-            :src="menuOpen ? '../../assets/images/close.png' : '../../assets/images/menu.png'"
+            :src="menuOpen ? '@/assets/images/close.png' : '@/assets/images/menu.png'"
             alt="Menu Toggle"
             class="w-8 h-8 cursor-pointer md:hidden"
             @click="toggleMenu"
