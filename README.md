@@ -40,3 +40,14 @@ npm install sweetalert2
 ```
 npm install vue-router
 ```
+
+
+# For more reference 
+
+```
+[Tailwind Css](https://tailwindcss.com/docs/installation/using-vite)
+```
+
+```
+[Vue Js](https://vuejs.org/guide/quick-start.html)
+```
